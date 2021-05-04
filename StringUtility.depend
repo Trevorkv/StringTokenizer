@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1620086243 source:c:\users\trevor\documents\programming projects\c++ projects\stringutility\main.cpp
+	<iostream>
+	"StringTokenizer.h"
+
+1620085985 c:\users\trevor\documents\programming projects\c++ projects\stringutility\include\stringtokenizer.h
+	<string>
+	<vector>
+	<iostream>
+
+1620086009 source:c:\users\trevor\documents\programming projects\c++ projects\stringutility\src\stringtokenizer.cpp
+	"StringTokenizer.h"
+
