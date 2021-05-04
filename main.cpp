@@ -2,9 +2,9 @@
 #include "StringTokenizer.h"
 
 using namespace std;
-using namespace StringUtil;
+using NewHome::StringUtil::StringTokenizer;
 
-void PrintTokens(string, StringUtil::StringTokenizer);
+void PrintTokens(string, StringTokenizer);
 
 int main()
 {
@@ -14,9 +14,9 @@ int main()
     string test1 = "hello,world";
     string test2 = "hello|world,my;name|is";
 
-    StringUtil::StringTokenizer strTok(test);
-    StringUtil::StringTokenizer strTok1(test1, vector<string>(1, ","));
-    StringUtil::StringTokenizer strTok2(test2, "|,;");
+    StringTokenizer strTok(test);
+    StringTokenizer strTok1(test1, vector<string>(1, ","));
+    StringTokenizer strTok2(test2, "|,;");
 
     PrintTokens(test, strTok);
     PrintTokens(test1,strTok1);
@@ -25,7 +25,7 @@ int main()
     return 0;
 }
 
-void PrintTokens(string original, StringUtil::StringTokenizer st)
+void PrintTokens(string original, StringTokenizer st)
 {
     cout << "Original : " << original << endl;
     cout << "coutn = " << st.CountTokens() << endl;

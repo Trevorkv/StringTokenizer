@@ -5,14 +5,10 @@
 #include<vector>
 #include<iostream>
 
-
-
-namespace StringUtil
+namespace NewHome::StringUtil
 {
     using std::string;
     using std::vector;
-    using std::cout;
-    using std::endl;
 
     class StringTokenizer
     {

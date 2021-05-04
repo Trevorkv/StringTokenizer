@@ -1,6 +1,7 @@
 #include "StringTokenizer.h"
 
-namespace StringUtil{
+namespace NewHome::StringUtil
+{
 
     StringTokenizer::StringTokenizer(string str, string delim)
     {
