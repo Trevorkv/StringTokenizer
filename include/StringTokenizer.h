@@ -12,6 +12,8 @@ namespace NewHome::StringUtil
 
     class StringTokenizer
     {
+
+
         public:
             StringTokenizer(string, string = " \r\t");
             StringTokenizer(string, vector<string>);
@@ -27,8 +29,6 @@ namespace NewHome::StringUtil
 
             bool HasNextToken();
             bool HasNextDelim();
-
-
 
         protected:
 

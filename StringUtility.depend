@@ -3,11 +3,17 @@
 	<iostream>
 	"StringTokenizer.h"
 
-1620085985 c:\users\trevor\documents\programming projects\c++ projects\stringutility\include\stringtokenizer.h
+1620618141 c:\users\trevor\documents\programming projects\c++ projects\stringutility\include\stringtokenizer.h
 	<string>
 	<vector>
 	<iostream>
 
 1620086009 source:c:\users\trevor\documents\programming projects\c++ projects\stringutility\src\stringtokenizer.cpp
 	"StringTokenizer.h"
+
+1620618121 source:c:\users\trevor\documents\programming projects\c++ projects\stringutility\src\stringutilfunctions.cpp
+	"StringUtilFunctions.h"
+
+1620618133 c:\users\trevor\documents\programming projects\c++ projects\stringutility\include\stringutilfunctions.h
+	<string>
 
