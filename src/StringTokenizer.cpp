@@ -135,7 +135,7 @@ namespace NewHome::StringUtil
             if(temp != string::npos && temp < index)
             {
                 index = temp;
-                ret = _delim[i].size();
+                ret = strTemp.substr(index, _delim[i].size());
             }
         }
 

@@ -4,7 +4,7 @@
 using namespace std;
 using NewHome::StringUtil::StringTokenizer;
 
-void PrintTokens(string, StringTokenizer);
+void TestTokenizer(string, StringTokenizer);
 
 int main()
 {
@@ -18,23 +18,21 @@ int main()
     StringTokenizer strTok1(test1, vector<string>(1, ","));
     StringTokenizer strTok2(test2, "|,;");
 
-    PrintTokens(test, strTok);
-    PrintTokens(test1,strTok1);
-    PrintTokens(test2, strTok2);
+    TestTokenizer(test, strTok);
+    TestTokenizer(test1,strTok1);
+    TestTokenizer(test2, strTok2);
 
     return 0;
 }
 
-void PrintTokens(string original, StringTokenizer st)
+void TestTokenizer(string original, StringTokenizer st)
 {
     cout << "Original : " << original << endl;
-    cout << "coutn = " << st.CountTokens() << endl;
+    cout << "Token Counts = " << st.CountTokens() << endl;
 
-
-    int i = 0;
     while(st.HasNextToken())
     {
-        cout << st.NextToken() << endl;
-        i++;
+        cout << "Next Delimiter = " << st.PeekNextDelim() << endl;
+        cout << "Token = " << st.NextToken() << endl;
     }
 }
