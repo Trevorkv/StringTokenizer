@@ -27,6 +27,8 @@ namespace NewHome::StringUtil
 
             string PeekNextDelim(int = 0);
 
+            string ToString();
+
             bool HasNextToken();
             bool HasNextDelim();
 

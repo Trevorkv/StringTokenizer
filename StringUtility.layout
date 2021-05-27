@@ -7,24 +7,28 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\StringUtilFunctions.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+	<File name="src\StringUtilFunctions.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="321" topLine="10" />
+			<Cursor1 position="3144" topLine="8" />
 		</Cursor>
 	</File>
-	<File name="include\StringUtilFunctions.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+	<File name="include\StringUtilFunctions.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="194" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\StringTokenizer.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+	<File name="main.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1401" topLine="15" />
+		</Cursor>
+		<Folding>
+			<Collapse line="24" />
+			<Collapse line="41" />
+		</Folding>
+	</File>
+	<File name="include\StringTokenizer.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="680" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="main.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="166" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

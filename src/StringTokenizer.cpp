@@ -142,6 +142,18 @@ namespace NewHome::StringUtil
         return ret;
     }
 
+    /***************************************************************************************
+    *Function: StringYTokenizer::ToString
+    *Param: void
+    *Description: Returns the value of the remaining string being tokenized by the current
+    *   object.
+    *Return: string
+    ***************************************************************************************/
+    string StringTokenizer::ToString()
+    {
+        return _str;
+    }
+
 
     /*************************************************************************************
     *Function: StringATokenizer::HasNextToken
