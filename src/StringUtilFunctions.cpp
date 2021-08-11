@@ -116,7 +116,7 @@ namespace NewHome::StringUtil
     {
         string ret;
 
-        for(int i = 0; i < v.size(); v++)
+        for(int i = 0; i < v.size(); i++)
         {
             ret.append(v[i] + ",");
         }
