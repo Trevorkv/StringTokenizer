@@ -13,6 +13,8 @@ namespace NewHome::StringUtil
     string TrimTrailingSpaces(string);
     string TrimrimLeadingSpaces(string);
     string TrimExessiveSpaces(string);
+
+    string ToString(vector<string>);
 }
 
 #endif // STRINGUTILFUNCTIONS_H_INCLUDED

@@ -16,13 +16,19 @@ namespace NewHome::StringUtil
 
         for(int i = 0; i < s.size(); i++)
         {
-            if((s[i] == '.' && hasDecimal) || !std::isdigit(s[i])
-               || (s[i] == '-' && i > 0) )
-            {
+            if(s[i] == '-' && i == 0 && s.size() > 1)
+                ret = true;
+            else if(s[i] == '.' && hasDecimal)
                 ret = false;
+            else if(s[i] == '.')
+                hasDecimal = true;
+            else if(!std::isdigit(s[i]))
+                ret = false;
+
+            if(!ret)
                 break;
-            }
         }
+
 
         return ret;
     }
@@ -98,5 +104,23 @@ namespace NewHome::StringUtil
         }
 
         return s;
+    }
+
+    /**************************************************************************************************
+    *Function: ToString
+    *Param: vector<string> v
+    *Description: Returns v as a string where its elements are partitioned by a comma
+    *Return: string-A comma separated list that holds elements of v
+    **************************************************************************************************/
+    string ToString(vector<string> v)
+    {
+        string ret;
+
+        for(int i = 0; i < v.size(); v++)
+        {
+            ret.append(v[i] + ",");
+        }
+
+        return ret;
     }
 }
