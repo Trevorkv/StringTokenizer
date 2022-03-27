@@ -21,13 +21,7 @@ namespace NewHome::StringUtil
         //dtor
     }
 
-    /************************************************************************
-    *Function: StringTokenizer::CountTokens
-    *Param: int i
-    *Description: Returns the number of tokens in the given string starting
-    *   from the given index i.
-    *Return: int
-    ************************************************************************/
+
     int StringTokenizer::CountTokens(int i)
     {
         int ret = 0;
@@ -51,12 +45,7 @@ namespace NewHome::StringUtil
         return ret+1;
     }
 
-    /*****************************************************************************
-    *Function: StringTokenizer::NextToken
-    *Param: void
-    *Description: Extracts the next token as a string and return it.
-    *Return: string
-    *****************************************************************************/
+
     string StringTokenizer::NextToken()
     {
         string ret = "";
@@ -78,14 +67,7 @@ namespace NewHome::StringUtil
         return ret;
     }
 
-    /**********************************************************************************
-    *Function: StringTokenizer::NextToken
-    *Param: string delim
-    *Description: Extracts the next token from the given string using delim to provide
-    *   a list of delimiters. Each charactrer in delim overrides the objects
-    *   instantiated delimiters if applicable.
-    *Return: string
-    **********************************************************************************/
+
     string StringTokenizer::NextToken(string delim)
     {
         AssignDelim(delim);
@@ -95,14 +77,7 @@ namespace NewHome::StringUtil
         return ret;
     }
 
-    /**********************************************************************************
-    *Function: StringTokenizer::NextToken
-    *Param: vector<string> delim
-    *Description: Extracts the next token from the given string using delim to provide
-    *   a list of delimiters. delim overrides the objects instantiated delimiters if
-    *   applicable.
-    *Return: string
-    **********************************************************************************/
+
     string StringTokenizer::NextToken(vector<string> delim)
     {
         AssignDelim(delim);
@@ -112,13 +87,7 @@ namespace NewHome::StringUtil
     }
 
 
-    /***************************************************************************************
-    *Function: StringTokenizer::PeekNextDelim
-    *Param: int i = 0
-    *Description: Returns a copy of the next delimiter in the given string starting from the
-    *   index i. Default value of i is 0. Returns the empty string if nothing is found.
-    *Return: string
-    ***************************************************************************************/
+
     string StringTokenizer::PeekNextDelim(int i)
     {
         string strTemp = _str.substr(i, _str.size());
@@ -142,36 +111,20 @@ namespace NewHome::StringUtil
         return ret;
     }
 
-    /***************************************************************************************
-    *Function: StringYTokenizer::ToString
-    *Param: void
-    *Description: Returns the value of the remaining string being tokenized by the current
-    *   object.
-    *Return: string
-    ***************************************************************************************/
+
     string StringTokenizer::ToString()
     {
         return _str;
     }
 
 
-    /*************************************************************************************
-    *Function: StringATokenizer::HasNextToken
-    *Param: void
-    *Description: Returns true if there is another token, else return false.
-    *Return: bool
-    *************************************************************************************/
+
     bool StringTokenizer::HasNextToken()
     {
         return !_str.empty();
     }
 
-    /************************************************************************************
-    *Function: StringATokenizer::HasNextDelim
-    *Param: void
-    *Description: Returns true if there is another delimiter, else false.
-    *Return: bool
-    ************************************************************************************/
+
     bool StringTokenizer::HasNextDelim()
     {
         string nextDelim = PeekNextDelim();
@@ -179,13 +132,7 @@ namespace NewHome::StringUtil
         return !nextDelim.empty();
     }
 
-    /***********************************************************************************
-    *Function: StringTokenizer::AssignDelim
-    *Param: string s
-    *Description: Assigns the characters of s as values of the delimiters used in the
-    *   StringTokenizer object.
-    *Return: void
-    ***********************************************************************************/
+
     void StringTokenizer::AssignDelim(string s)
     {
         _delim.clear();
@@ -196,13 +143,7 @@ namespace NewHome::StringUtil
         }
     }
 
-    /***********************************************************************************
-    *Function: StringTokenizer::AssignDelim
-    *Param: string s
-    *Description: Assigns the value of s as the delimiters used in the
-    *   StringTokenizer object.
-    *Return: void
-    ***********************************************************************************/
+
     void StringTokenizer::AssignDelim(vector<string> s)
     {
         _delim.clear();
